@@ -1,3 +1,3 @@
-# Khan-Demo
+# Khan--Demo
 This is my first repository
-Author - mirza
+Author - khan
