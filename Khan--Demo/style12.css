@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    min-height: 30px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    gap: 50px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo i {
+    text-align: left;
+    margin-right: 0px;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-box input {
+    width: 90%;
+    padding: 12px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    width: 50px;
+    border: none;
+    background-color: #f3ac13;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-box button:hover {
+    background: #fdb93b;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 35px;
+}
+
+.header-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: bold;
+}
+
+.navbar {
+    min-width: 50px;
+    height: 5px;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 40px;
+    background-color: #232f3e;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #febd69;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 1100px;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 60%;
+    left: 65px;
+}
+
+.hero-text h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-text button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #1261a0;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #0d4f85;
+}
+
+.book-rooms {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #9fabca;
+}
+
+.book-rooms h2 {
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 180px;
+    padding: 10px;
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 6px;
+    background-color: #e2e4ea;
+}
+
+
+.form-group input:hover {
+    box-shadow: 0 2px 5px rgb(250, 247, 247);
+}
+
+.form-group select:hover {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.18);
+}
+
+.search-btn {
+    display: block;
+    margin: 12px auto;
+    padding: 10px 30px;
+    background-color: #116fbd;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #2b6492;
+}
+
+.rooms {
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.rooms h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.room-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.room-card {
+    width: 30%;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.room-card:hover {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.18);
+}
+
+.room-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.room-card h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.room-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.room-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1261a0;
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.room-card button:hover {
+    background-color: #0d4f85;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 30px;
+    background-color: rgb(233, 228, 220);
+}
+
+.service-card {
+    background-color: #f2eded;
+    padding: 35px 35px;
+    margin: 35px 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px black;
+}
+
+.service-card:hover {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.18);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 25px 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.about-image {
+    width: 100%;
+    margin: 15px 40px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 420px;
+    margin-top: 10px;
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: 60%;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #1261a0;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0d4f85;
+}
+
+.contact {
+    padding: 25px 40px;
+    background: #f8fbff;
+    margin: 22px 20px;
+}
+
+.contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #123d68;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-form {
+    width: 70%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #123d68;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-box {
+    width: 70%;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.input-box:hover {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.18);
+}
+
+.input-box i {
+    margin-left: 10px;
+    color: #174f7c;
+}
+
+.input-box input {
+    width: 70%;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.message-box {
+    height: 70px;
+    align-items: flex-start;
+}
+
+.message-box i {
+    margin-top: 10px;
+}
+
+.message-box textarea {
+    width: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 40%;
+    height: 40px;
+    margin-left: 15%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #1769aa;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0d4f83;
+}
+
+.contact-info {
+    width: 40%;
+    border: 1px solid #8aa9c4;
+    border-radius: 10px;
+    padding: 18px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.info-item>i {
+    font-size: 20px;
+    color: #14558a;
+    margin-top: 3px;
+    width: 25px;
+}
+
+.info-item h4 {
+    margin: 0 0 4px;
+    color: #123d68;
+    font-size: 13px;
+}
+
+.info-item p {
+    margin: 0;
+    color: #345;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer {
+    min-height: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    gap: 50px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo i {
+    text-align: left;
+    margin-right: 0px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
