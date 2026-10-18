@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animation Css</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .screen {
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .line {
+            position: absolute;
+            bottom: -20%;
+            width: 4px;
+            height: 140%;
+            transform: rotate(-5deg);
+            opacity: 0;
+            animation: lines 4s ease-in-out infinite;
+        }
+
+        .line:nth-child(1) {
+            left: 18%;
+            background: #00b7ff;
+            box-shadow: 0 0 15px #00b7ff;
+            animation-delay: .1s;
+        }
+
+        .line:nth-child(2) {
+            left: 28%;
+            background: #ff2b00;
+            box-shadow: 0 0 18px #ff2b00;
+            animation-delay: .2s;
+        }
+
+        .line:nth-child(3) {
+            left: 35%;
+            background: #ff4b00;
+            box-shadow: 0 0 18px #ff4b00;
+            animation-delay: .3s;
+        }
+
+        .line:nth-child(4) {
+            left: 42%;
+            background: #e50914;
+            box-shadow: 0 0 20px #e50914;
+            animation-delay: .4s;
+        }
+
+        .line:nth-child(5) {
+            left: 47%;
+            background: #ff2222;
+            box-shadow: 0 0 20px #ff2222;
+            animation-delay: .5s;
+        }
+
+        .line:nth-child(6) {
+            left: 52%;
+            background: #ff3333;
+            box-shadow: 0 0 20px #ff3333;
+            animation-delay: .6s;
+        }
+
+        .line:nth-child(7) {
+            left: 58%;
+            background: #ff2222;
+            box-shadow: 0 0 20px #ff2222;
+            animation-delay: .7s;
+        }
+
+        .line:nth-child(8) {
+            left: 66%;
+            background: #006cff;
+            box-shadow: 0 0 18px #006cff;
+            animation-delay: .8s;
+        }
+
+        .line:nth-child(9) {
+            left: 73%;
+            background: #008cff;
+            box-shadow: 0 0 18px #008cff;
+            animation-delay: .9s;
+        }
+
+        .line:nth-child(9) {
+            left: 73%;
+            background: #008cff;
+            box-shadow: 0 0 18px #008cff;
+            animation-delay: .9s;
+        }
+
+        .netflix {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            height: 110px;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: nAnimation 4s ease-in-out infinite;
+        }
+
+        .netflix::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 22px;
+            height: 100%;
+            background: #b20710;
+            box-shadow: 0 0 8px #e50914;
+        }
+
+        .netflix::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 22px;
+            height: 100%;
+            background: #e50914;
+            box-shadow: 0 0 8px #e50914;
+        }
+
+        .netflix span {
+            position: absolute;
+            left: 25px;
+            top: 0;
+            width: 25px;
+            height: 110px;
+            background: linear-gradient(90deg,
+                    #b20710,
+                    #9d0819,
+                    #8b0000);
+            transform: skewX(18deg);
+        }
+
+
+        @keyframes lines {
+
+            0% {
+                opacity: 0;
+                transform: translateY(100%) rotate(-5deg);
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            55% {
+                opacity: 1;
+                transform: translateY(0) rotate(-5deg);
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-100%) rotate(-5deg);
+            }
+        }
+
+
+        @keyframes nAnimation {
+
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(.4);
+            }
+
+            55% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(.4);
+            }
+
+            68% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            82% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(1.15);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="screen">
+
+        <div class="lines">
+
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+
+        <div class="netflix">
+            <span></span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
