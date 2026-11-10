@@ -3,409 +3,231 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Collection</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <title>Prectice Shoping Webpage</title>
+    <link rel="stylesheet" href="shoping.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
+    <div class="container">
 
-    <main id="collection">
+        <header class="header">
 
-        <section class="sale-baner">
-            <h2>Save on Select Styles</h2>
-            <p>
-                Take an extra 20% off sale items — limited time
-                <a class="sale-link" href="#products">Shop now</a>
-            </p>
+            <div class="logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                N/K SHOP
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search products...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="header-btn">
+
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </a>
+
+            </div>
+
+        </header>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Electronics</a>
+            <a href="#">Fashion</a>
+            <a href="#">Beauty</a>
+            <a href="#">Home & Kitchen</a>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <img src"shoping.png">
+                <p>Big Sale</p>
+                <h1>UP to 30% OFF</h1>
+
+                <span>Discover amazing product at amazing prices</span>
+
+                <button class="shop-btn">Shop Now</button>
+
+            </div>
+
         </section>
 
-        <section class="section" id="products" aria-label="Fashion collection">
-            <div class="container">
+        <section class="section">
+            <h2>Shop By Category</h2>
 
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth1.png" alt="The Brisa Overshirt">
-                        <img class="hover-img" src="cloth1,2.png" alt="Brisa alternate view">
-                        <a class="btn" href="#brisa">Quick View</a>
+            <div class="category-container">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
                     </div>
-                    <div class="product-info">
-                        <h3>The Brisa Overshirt</h3>
-                        <p>Rs. 12,800.00</p>
-                    </div>
-                </article>
+                    <h3>Mobiles</h3>
+                </div>
 
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth2.png" alt="The Wren Coat">
-                        <img class="hover-img" src="cloth2,2.png" alt="Wren alternate view">
-                        <a class="btn" href="#wren">Quick View</a>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-shirt"></i>
                     </div>
-                    <div class="product-info">
-                        <h3>The Wren Coat</h3>
-                        <p>Rs. 27,800.00</p>
-                    </div>
-                </article>
+                    <h3>Fashion</h3>
+                </div>
 
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth3.png" alt="The Ceru Knit">
-                        <img class="hover-img" src="cloth3,2.png" alt="Ceru alternate view">
-                        <a class="btn" href="#ceru">Quick View</a>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-laptop"></i>
                     </div>
-                    <div class="product-info">
-                        <h3>The Ceru Knit</h3>
-                        <p>Rs. 14,400.00</p>
-                    </div>
-                </article>
+                    <h3>Electronics</h3>
+                </div>
 
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth4.png" alt="The Hana Overshirt">
-                        <img class="hover-img" src="cloth4,2.png" alt="Hana alternate view">
-                        <a class="btn" href="#hana">Quick View</a>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-shoe-prints"></i>
                     </div>
-                    <div class="product-info">
-                        <h3>The Hana Overshirt</h3>
-                        <p>Rs. 15,900.00</p>
-                    </div>
-                </article>
+                    <h3>Shoes</h3>
+                </div>
 
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth5.png" alt="The Eno Cardigan">
-                        <img class="hover-img" src="cloth5,2.png" alt="Eno alternate view">
-                        <a class="btn" href="#classic">Quick View</a>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-spa"></i>
                     </div>
-                    <div class="product-info">
-                        <h3>The Eno Cardigan</h3>
-                        <p>Rs. 18,300.00</p>
-                    </div>
-                </article>
+                    <h3>Beauty</h3>
+                </div>
 
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth6.png" alt="The Tove Blazer">
-                        <img class="hover-img" src="cloth6,2.png" alt="Tove alternate view">
-                        <a class="btn" href="#everyday">Quick View</a>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-house"></i>
                     </div>
-                    <div class="product-info">
-                        <h3>The Tove Blazer</h3>
-                        <p>Rs. 22,100.00</p>
-                    </div>
-                </article>
-
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth7.png" alt="The Vela Shirt">
-                        <img class="hover-img" src="cloth7,2.png" alt="Vela alternate view">
-                        <a class="btn" href="#modern">Quick View</a>
-                    </div>
-                    <div class="product-info">
-                        <h3>The Vela Shirt</h3>
-                        <p>Rs. 12,600.00</p>
-                    </div>
-                </article>
-
-                <article class="image-container">
-                    <div class="product-image">
-                        <img src="cloth8.png" alt="The Form Long-Sleeve">
-                        <img class="hover-img" src="cloth8,2.png" alt="Form alternate view">
-                        <a class="btn" href="#relaxed">Quick View</a>
-                    </div>
-                    <div class="product-info">
-                        <h3>The Form Long-Sleeve</h3>
-                        <p>Rs. 7,600.00</p>
-                    </div>
-                </article>
-
+                    <h3>Home</h3>
+                </div>
             </div>
         </section>
-    </main>
 
+        <section class="section">
+            <h2>Trending Products</h2>
 
-    <section class="product-details" id="brisa">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="brisa-image" id="brisa-img1" checked>
-                <input type="radio" name="brisa-image" id="brisa-img2">
-                <input type="radio" name="brisa-image" id="brisa-img3">
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wirless Headphones</h3>
+                        <p class="rating"> ★★★</p>
+                        <p class="price">$26.09</p>
 
-                <div class="thumbnails">
-                    <label for="brisa-img1"><img src="cloth1.png" alt="Brisa image 1"></label>
-                    <label for="brisa-img2"><img src="cloth1,2.png" alt="Brisa image 2"></label>
-                    <label for="brisa-img3"><img src="cloth1,3.png" alt="Brisa image 3"></label>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
                 </div>
 
-                <div class="large-image">
-                    <img class="photo1" src="cloth1.png" alt="Brisa product view 1">
-                    <img class="photo2" src="cloth1,2.png" alt="Brisa product view 2">
-                    <img class="photo3" src="cloth1,3.png" alt="Brisa product view 3">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Smartphone</h3>
+                        <p class="rating"> ★★</p>
+                        <p class="price">$166.82</p>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Laptop</h3>
+                        <p class="rating"> ★★★</p>
+                        <p class="price">$569.77</p>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Digital Camera</h3>
+                        <p class="rating"> ★★★★</p>
+                        <p class="price">$1,973.70</p>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals">
+            <div>
+                <p>Limited Time Offer</p>
+                <h2>Best Deals Of The Day</h2>
+                <span>Your favorite products before the offerends</span>
+            </div>
+
+            <button class="shop-btn">View Deals</button>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-box">
+                <h2>Shopkhan</h2>
+                <p>Your one stop destination for online shopping</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Offers</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Coustomer</h3>
+
+                <a href="#">Help center</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+
                 </div>
             </div>
 
-            <div class="details-info">
-                <h1>The Brisa Overshirt</h1>
-                <p class="price">Rs. 12,800.00</p>
-                <p class="description">
-                    The Brisa Overshirt is a lightweight linen layer with an easy,
-                    thrown-on feel. Made in soft sage linen, it has an oversized
-                    silhouette, open front styling, and a breezy drape that works
-                    beautifully over tanks, tees, and matching bottoms.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
+        </footer>
+
+        <div class="copyright">
+            @Copy 2026 Shop.All Right
         </div>
-    </section>
-
-
-    <section class="product-details" id="wren">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="wren-image" id="wren-img1" checked>
-                <input type="radio" name="wren-image" id="wren-img2">
-                <input type="radio" name="wren-image" id="wren-img3">
-
-                <div class="thumbnails">
-                    <label for="wren-img1"><img src="cloth2.png" alt="Wren image 1"></label>
-                    <label for="wren-img2"><img src="cloth2,2.png" alt="Wren image 2"></label>
-                    <label for="wren-img3"><img src="cloth2,3.png" alt="Wren image 3"></label>
-                </div>
-
-                <div class="large-image">
-                    <img class="photo1" src="cloth2.png" alt="Wren product view 1">
-                    <img class="photo2" src="cloth2,2.png" alt="Wren product view 2">
-                    <img class="photo3" src="cloth2,3.png" alt="Wren product view 3">
-                </div>
-            </div>
-
-            <div class="details-info">
-                <h1>The Wren Coat</h1>
-                <p class="price">Rs. 27,800.00</p>
-                <p class="description">
-                    The Wren Coat is a clean longline outer layer that brings
-                    structure and warmth to cooler days. Designed in a rich camel
-                    wool-blend, it has a classic tailored silhouette, notched lapel,
-                    and a longer length that sharpens whatever you wear underneath.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="product-details" id="ceru">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="ceru-image" id="ceru-img1" checked>
-                <input type="radio" name="ceru-image" id="ceru-img2">
-                <input type="radio" name="ceru-image" id="ceru-img3">
-
-                <div class="thumbnails">
-                    <label for="ceru-img1"><img src="cloth3.png" alt="Ceru image 1"></label>
-                    <label for="ceru-img2"><img src="cloth3,2.png" alt="Ceru image 2"></label>
-                    <label for="ceru-img3"><img src="cloth3,3.png" alt="Ceru image 3"></label>
-                </div>
-
-                <div class="large-image">
-                    <img class="photo1" src="cloth3.png" alt="Ceru product view 1">
-                    <img class="photo2" src="cloth3,2.png" alt="Ceru product view 2">
-                    <img class="photo3" src="cloth3,3.png" alt="Ceru product view 3">
-                </div>
-            </div>
-
-            <div class="details-info">
-                <h1>The Ceru Knit</h1>
-                <p class="price">Rs. 14,400.00</p>
-                <p class="description">
-                    The Ceru Knit is a soft textured sweater with an easy, relaxed
-                    shape. Made in a warm ivory knit, it features a classic crew
-                    neckline, dropped shoulders, and a slightly cropped length
-                    that works beautifully with tailored or relaxed bottoms.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="product-details" id="hana">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="hana-image" id="hana-img1" checked>
-                <input type="radio" name="hana-image" id="hana-img2">
-                <input type="radio" name="hana-image" id="hana-img3">
-
-                <div class="thumbnails">
-                    <label for="hana-img1"><img src="cloth4.png" alt="Hana image 1"></label>
-                    <label for="hana-img2"><img src="cloth4,2.png" alt="Hana image 2"></label>
-                    <label for="hana-img3"><img src="cloth4,3.png" alt="Hana image 3"></label>
-                </div>
-
-                <div class="large-image">
-                    <img class="photo1" src="cloth4.png" alt="Hana product view 1">
-                    <img class="photo2" src="cloth4,2.png" alt="Hana product view 2">
-                    <img class="photo3" src="cloth4,3.png" alt="Hana product view 3">
-                </div>
-            </div>
-
-            <div class="details-info">
-                <h1>The Hana Overshirt</h1>
-                <p class="price">Rs. 15,900.00</p>
-                <p class="description">
-                    The Hana Overshirt is an easy layering piece with a relaxed
-                    silhouette and versatile styling. Pair it with your favourite
-                    everyday basics for a clean, effortless look.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="product-details" id="classic">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="eno-image" id="eno-img1" checked>
-                <input type="radio" name="eno-image" id="eno-img2">
-                <input type="radio" name="eno-image" id="eno-img3">
-
-                <div class="thumbnails">
-                    <label for="eno-img1"><img src="cloth5.png" alt="Eno image 1"></label>
-                    <label for="eno-img2"><img src="cloth5,2.png" alt="Eno image 2"></label>
-                    <label for="eno-img3"><img src="cloth5,3.png" alt="Eno image 3"></label>
-                </div>
-
-                <div class="large-image">
-                    <img class="photo1" src="cloth5.png" alt="Eno product view 1">
-                    <img class="photo2" src="cloth5,2.png" alt="Eno product view 2">
-                    <img class="photo3" src="cloth5,3.png" alt="Eno product view 3">
-                </div>
-            </div>
-
-            <div class="details-info">
-                <h1>The Eno Cardigan</h1>
-                <p class="price">Rs. 18,300.00</p>
-                <p class="description">
-                    The Eno Cardigan is a versatile knit layer with a comfortable
-                    shape. Wear it over a simple tee or shirt for an easy,
-                    everyday outfit.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="product-details" id="everyday">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="tove-image" id="tove-img1" checked>
-                <input type="radio" name="tove-image" id="tove-img2">
-                <input type="radio" name="tove-image" id="tove-img3">
-
-                <div class="thumbnails">
-                    <label for="tove-img1"><img src="cloth6.png" alt="Tove image 1"></label>
-                    <label for="tove-img2"><img src="cloth6,2.png" alt="Tove image 2"></label>
-                    <label for="tove-img3"><img src="cloth6,3.png" alt="Tove image 3"></label>
-                </div>
-
-                <div class="large-image">
-                    <img class="photo1" src="cloth6.png" alt="Tove product view 1">
-                    <img class="photo2" src="cloth6,2.png" alt="Tove product view 2">
-                    <img class="photo3" src="cloth6,3.png" alt="Tove product view 3">
-                </div>
-            </div>
-
-            <div class="details-info">
-                <h1>The Tove Blazer</h1>
-                <p class="price">Rs. 22,100.00</p>
-                <p class="description">
-                    The Tove Blazer adds a structured finish to everyday outfits.
-                    Style it with tailored trousers or casual pieces for a smart,
-                    modern look.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="product-details" id="modern">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="vela-image" id="vela-img1" checked>
-                <input type="radio" name="vela-image" id="vela-img2">
-                <input type="radio" name="vela-image" id="vela-img3">
-
-                <div class="thumbnails">
-                    <label for="vela-img1"><img src="cloth7.png" alt="Vela image 1"></label>
-                    <label for="vela-img2"><img src="cloth7,2.png" alt="Vela image 2"></label>
-                    <label for="vela-img3"><img src="cloth7,3.png" alt="Vela image 3"></label>
-                </div>
-
-                <div class="large-image">
-                    <img class="photo1" src="cloth7.png" alt="Vela product view 1">
-                    <img class="photo2" src="cloth7,2.png" alt="Vela product view 2">
-                    <img class="photo3" src="cloth7,3.png" alt="Vela product view 3">
-                </div>
-            </div>
-
-            <div class="details-info">
-                <h1>The Vela Shirt</h1>
-                <p class="price">Rs. 12,600.00</p>
-                <p class="description">
-                    The Vela Shirt is a versatile wardrobe essential with a clean,
-                    easy-to-style silhouette. Wear it on its own or layer it with
-                    your favourite pieces.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="product-details" id="relaxed">
-        <div class="details-layout">
-            <div class="details-gallery css-gallery">
-                <input type="radio" name="form-image" id="form-img1" checked>
-                <input type="radio" name="form-image" id="form-img2">
-                <input type="radio" name="form-image" id="form-img3">
-
-                <div class="thumbnails">
-                    <label for="form-img1"><img src="cloth8.png" alt="Form image 1"></label>
-                    <label for="form-img2"><img src="cloth8,2.png" alt="Form image 2"></label>
-                    <label for="form-img3"><img src="cloth8,3.png" alt="Form image 3"></label>
-                </div>
-
-                <div class="large-image">
-                    <img class="photo1" src="cloth8.png" alt="Form product view 1">
-                    <img class="photo2" src="cloth8,2.png" alt="Form product view 2">
-                    <img class="photo3" src="cloth8,3.png" alt="Form product view 3">
-                </div>
-            </div>
-
-            <div class="details-info">
-                <h1>The Form Long-Sleeve</h1>
-                <p class="price">Rs. 7,600.00</p>
-                <p class="description">
-                    The Form Long-Sleeve is a simple, versatile top with a relaxed
-                    feel. It is easy to pair with everyday trousers, denim, or
-                    layered outfits.
-                </p>
-                <a class="cart-btn" href="D:\Noshez\Basic html and css\cart.html">ADD TO CART</a>
-                <a class="back-link" href="#products">Back to collection</a>
-            </div>
-        </div>
-    </section>
 
 </body>
 
